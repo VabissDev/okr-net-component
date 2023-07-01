@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mXsrKKmz7h0/zbnvjLuYpC6o6fyI7qNowQK10CYlJVWzRh8Ekh8rQwLa76N6Cc5fTm0xpXZE7qEuna9wagiRRw==",
+  "dgSpecHash": "7as67GtC4yyvW2Dg2JIdVVmntvkjTWPe7oSQMcwQ/Zotg+1OrE/tXVKmanb30ReGoOeB3iV+vuntSWbmBmtSTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR\\StorageCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\linq2db\\5.2.2\\linq2db.5.2.2.nupkg.sha512"
+  ],
   "logs": []
 }
