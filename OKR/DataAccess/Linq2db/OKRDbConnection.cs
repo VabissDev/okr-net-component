@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace StorageCore.DataAccess.Linq2db
 {
-    public class OKRDbConnection : DataConnection
+    public class OkrDbConnection : DataConnection
     {
-        public OKRDbConnection(DataOptions options) : base(options)
+        public OkrDbConnection(DataOptions options) : base(options)
         {
         }
         public ITable<Subscription> Subscriptions => this.GetTable<Subscription>();

@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace StorageCore.Domain.Abstraction
 {
-    public interface IBillingRepository
+    public interface IBillingRepository : IRepository<Billing>
     {
-        void Add(Billing billing);
         void Update(Billing billing);
         IList<Billing> Get();
-        Billing Get(int id);
+        void Delete(int id);
     }
 }

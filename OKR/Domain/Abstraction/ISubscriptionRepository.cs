@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace StorageCore.Domain.Abstraction
 {
-    public interface ISubscriptionRepository
+    public interface ISubscriptionRepository : IRepository<Subscription>
     {
-        void Add(Subscription subscription);
         void Update(Subscription subscription);
         IList<Subscription> Get();
-        Subscription Get(int id);
+        void Delete(int id);
     }
 }
