@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR\\StorageCore.csproj",
-      "projectName": "StorageCore",
-      "projectPath": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR\\StorageCore.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR-NET\\OKR-NET.csproj",
+      "projectName": "OKR-NET",
+      "projectPath": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR-NET\\OKR-NET.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR\\obj\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\okr-net-component\\OKR-NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
