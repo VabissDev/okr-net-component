@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Abstract\" />
+    <Compile Remove="Domain\Abstract\**" />
+    <EmbeddedResource Remove="Domain\Abstract\**" />
+    <None Remove="Domain\Abstract\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="linq2db" Version="5.2.2" />
   </ItemGroup>
 
 </Project>
