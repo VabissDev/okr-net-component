@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\okr-net-component\OKR.Common\bin\Debug\net5.0\OKR.Common.deps.json
+C:\Users\user\source\repos\okr-net-component\OKR.Common\bin\Debug\net5.0\OKR.Common.dll
+C:\Users\user\source\repos\okr-net-component\OKR.Common\bin\Debug\net5.0\ref\OKR.Common.dll
+C:\Users\user\source\repos\okr-net-component\OKR.Common\bin\Debug\net5.0\OKR.Common.pdb
+C:\Users\user\source\repos\okr-net-component\OKR.Common\bin\Debug\net5.0\StorageCore.dll
+C:\Users\user\source\repos\okr-net-component\OKR.Common\bin\Debug\net5.0\StorageCore.pdb
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.AssemblyInfo.cs
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.csproj.CopyComplete
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.dll
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\ref\OKR.Common.dll
+C:\Users\user\source\repos\okr-net-component\OKR.Common\obj\Debug\net5.0\OKR.Common.pdb

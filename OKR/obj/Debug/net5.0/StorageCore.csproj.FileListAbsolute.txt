@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\okr-net-component\OKR\bin\Debug\net5.0\StorageCore.deps.json
+C:\Users\user\source\repos\okr-net-component\OKR\bin\Debug\net5.0\StorageCore.dll
+C:\Users\user\source\repos\okr-net-component\OKR\bin\Debug\net5.0\ref\StorageCore.dll
+C:\Users\user\source\repos\okr-net-component\OKR\bin\Debug\net5.0\StorageCore.pdb
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.AssemblyInfo.cs
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.dll
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\ref\StorageCore.dll
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.pdb
