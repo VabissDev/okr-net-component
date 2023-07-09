@@ -9,8 +9,6 @@ namespace StorageCore.Domain.Abstraction
 {
     public interface ISubscriptionRepository : IRepository<Subscription>
     {
-        void Update(Subscription subscription);
-        IList<Subscription> Get();
-        void Delete(int id);
+       
     }
 }

@@ -9,8 +9,6 @@ namespace StorageCore.Domain.Abstraction
 {
     public interface IBillingRepository : IRepository<Billing>
     {
-        void Update(Billing billing);
-        IList<Billing> Get();
-        void Delete(int id);
+
     }
 }

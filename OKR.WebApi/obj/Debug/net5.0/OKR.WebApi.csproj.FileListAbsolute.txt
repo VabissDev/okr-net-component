@@ -39,3 +39,10 @@ C:\Users\user\source\repos\okr-net-component\OKR.WebApi\obj\Debug\net5.0\OKR.Web
 C:\Users\user\source\repos\okr-net-component\OKR.WebApi\obj\Debug\net5.0\ref\OKR.WebApi.dll
 C:\Users\user\source\repos\okr-net-component\OKR.WebApi\obj\Debug\net5.0\OKR.WebApi.pdb
 C:\Users\user\source\repos\okr-net-component\OKR.WebApi\obj\Debug\net5.0\OKR.WebApi.genruntimeconfig.cache
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\Npgsql.dll
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\source\repos\okr-net-component\OKR.WebApi\bin\Debug\net5.0\Dapper.dll

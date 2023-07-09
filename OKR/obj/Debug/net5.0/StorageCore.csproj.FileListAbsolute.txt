@@ -10,3 +10,6 @@ C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.cs
 C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.dll
 C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\ref\StorageCore.dll
 C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.pdb
+C:\Users\user\source\repos\okr-net-component\OKR\bin\Debug\net5.0\StorageCore.runtimeconfig.json
+C:\Users\user\source\repos\okr-net-component\OKR\bin\Debug\net5.0\StorageCore.runtimeconfig.dev.json
+C:\Users\user\source\repos\okr-net-component\OKR\obj\Debug\net5.0\StorageCore.genruntimeconfig.cache

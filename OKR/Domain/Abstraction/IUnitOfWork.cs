@@ -9,7 +9,7 @@ namespace StorageCore.Domain.Abstraction
     public interface IUnitOfWork : IDisposable
     {
         ISubscriptionRepository SubscriptionRepository { get; }
-        IBillingRepository BillingRepository { get; }
-        ISubscriptionPlanRepository SubscriptionPlanRepository { get; }
+        //IBillingRepository BillingRepository { get; }
+        //ISubscriptionPlanRepository SubscriptionPlanRepository { get; }
     }
 }

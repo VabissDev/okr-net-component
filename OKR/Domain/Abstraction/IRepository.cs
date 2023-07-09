@@ -8,7 +8,10 @@ namespace StorageCore.Domain.Abstraction
 {
     public interface IRepository<T>
     {
-        T FindById(object id);
-        int Add(T obj);
+        Task<bool> Create(T obj);
+        Task<List<T>> GetAll();
+        Task<T> Update(T obj);
+        Task<bool> Delete(int key);
+        Task<T> GetById(int id);
     }
 }

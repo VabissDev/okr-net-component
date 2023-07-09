@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Dapper/2.0.143": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {}
+        }
+      },
       "linq2db/5.2.2": {
         "type": "package",
         "compile": {
@@ -241,7 +250,7 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
-      "Npgsql/5.0.10": {
+      "Npgsql/5.0.16": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.6.0"
@@ -400,6 +409,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Dapper": "2.0.143",
+          "Npgsql": "5.0.16",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
           "linq2db": "5.2.2"
         },
@@ -413,6 +424,24 @@
     }
   },
   "libraries": {
+    "Dapper/2.0.143": {
+      "sha512": "Vh0U+Fins3IpS7APUlrzga3+1mswWngB5fZ0xj4w+FQR5JhJzA5uHV5rSepkahvmshNZUA0YcHtae9vFQpiVTw==",
+      "type": "package",
+      "path": "dapper/2.0.143",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.143.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
     "linq2db/5.2.2": {
       "sha512": "RPELtCwa5RxL1AuP8LCLsEBDpFMizHgG9J3lo1nQWrcQDvFQnKA2+ME06W3Ke/gg2kKrTd/l8Rhqu6lgPTyNqA==",
       "type": "package",
@@ -834,10 +863,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Npgsql/5.0.10": {
-      "sha512": "3TB9le3lfu5Hc+LSHqMCVLcA+qUPg1enyM4+u0pMUBmNNGwc0sVPrnfnys2TVZIdkF8Aww/AZlnJHDsnEGqD0g==",
+    "Npgsql/5.0.16": {
+      "sha512": "EVso4HfMSl2ywLeQczUFO70Mp9XNuNvYmHaYLuK87lCMUQ1aC/GIr01iDMXp4trRkoGegxMM4oVKiwvdBe2JaA==",
       "type": "package",
-      "path": "npgsql/5.0.10",
+      "path": "npgsql/5.0.16",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -849,7 +878,7 @@
         "lib/netstandard2.0/Npgsql.xml",
         "lib/netstandard2.1/Npgsql.dll",
         "lib/netstandard2.1/Npgsql.xml",
-        "npgsql.5.0.10.nupkg.sha512",
+        "npgsql.5.0.16.nupkg.sha512",
         "npgsql.nuspec",
         "postgresql.png"
       ]

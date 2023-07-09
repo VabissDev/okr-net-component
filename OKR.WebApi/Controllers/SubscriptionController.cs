@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OKR.WebApi.Models;
 using StorageCore.Domain.Abstraction;
+using StorageCore.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,59 +13,51 @@ namespace OKR.WebApi.Controllers
     [ApiController]
     public class SubscriptionController : ControllerBase
     {
-        private readonly IUnitOfWork _db;
-        public SubscriptionController(IUnitOfWork db)
+        private readonly ISubscriptionRepository _db;
+
+        public SubscriptionController(ISubscriptionRepository db)
         {
             _db = db;
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            try
-            {
-                var subscriptions = _db.SubscriptionRepository.Get();
+            var result = await _db.GetAll();
 
-                return Ok(subscriptions);
-            }
-            catch
-            {
-                return BadRequest("Unknown error occured");
-            }
+            return Ok(result);
         }
 
-        [HttpGet]
-        [Route("GetById/{id}")]
-        public IActionResult Get(int id)
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetSubscription(int id)
         {
-            try
-            {
-                var subscription = _db.SubscriptionRepository.FindById(id);
+            var result = await _db.GetById(id);
 
-                if (subscription == null)
-                    return BadRequest("No subscripton found with given id");
-
-                return Ok(subscription);
-            }
-            catch
-            {
-                return BadRequest("Unknown error occured");
-            }
+            return Ok(result);
         }
 
         [HttpPost]
-        public IActionResult Post(BankModel bankModel)
+        public async Task<IActionResult> AddSubscription([FromBody] Subscription subscription)
         {
-            try
-            {
-                bankService.Save(bankModel);
+            var result = await _db.Create(subscription);
 
-                return Ok("Success!");
-            }
-            catch
-            {
-                return BadRequest("Failed to add");
-            }
+            return Ok(result);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateEmployee([FromBody] Subscription subscription)
+        {
+            var result = await _db.Update(subscription);
+
+            return Ok(result);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteEmployee(int id)
+        {
+            var result = await _db.Delete(id);
+
+            return Ok(result);
         }
     }
 }
