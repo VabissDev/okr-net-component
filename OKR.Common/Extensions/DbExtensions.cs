@@ -17,7 +17,7 @@ namespace OKR.Common.Extensions
     {
         public static void AddDb(this IServiceCollection services, IConfiguration configuration)
         {
-            string connectionString = configuration.GetConnectionString("DefaultConnection");
+            string connectionString = configuration.GetConnectionString("OkrApp");
             services.AddLinqToDBContext<OkrDbConnection>((provider, options) =>
                 options.UseSqlServer(connectionString)
                 .UseDefaultLogging(provider), ServiceLifetime.Scoped);
