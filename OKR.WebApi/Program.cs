@@ -16,7 +16,7 @@ namespace OKR.WebApi
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            DefaultTypeMap.MatchNamesWithUnderscores = true;
+                   
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

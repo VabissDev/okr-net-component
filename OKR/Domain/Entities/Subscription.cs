@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StorageCore.Domain.Entities
 {
-    [Table("Subscriptions")]
+    [Table("Subscription")]
     public class Subscription
     {
         [PrimaryKey, Identity]

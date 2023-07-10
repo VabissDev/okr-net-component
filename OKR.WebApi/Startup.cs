@@ -1,3 +1,4 @@
+using Dapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +30,7 @@ namespace OKR.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            DefaultTypeMap.MatchNamesWithUnderscores = true;
             services.AddScoped<IDbService, DbService>();
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
             services.AddControllers();
@@ -36,6 +38,7 @@ namespace OKR.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OKR.WebApi", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
