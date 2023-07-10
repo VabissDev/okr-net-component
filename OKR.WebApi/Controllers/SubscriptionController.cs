@@ -37,17 +37,31 @@ namespace OKR.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddSubscription([FromBody] Subscription subscription)
+        public async Task<IActionResult> AddSubscription([FromBody] SubscriptionModel model)
         {
+            var subscription = new Subscription
+            {
+                Id = model.Id,
+                StartTime = model.StartTime,
+                EndTime = model.EndTime,
+                Active = model.Active
+            };
             var result = await _db.Create(subscription);
 
             return Ok(result);
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateEmployee([FromBody] Subscription subscription)
+        public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateSubscriptionModel model)
         {
-            var result = await _db.Update(subscription);
+            var subscriptionModel = await _db.GetById(id);
+            if (subscriptionModel != null)
+            {
+                subscriptionModel.StartTime = model.StartTime;
+                subscriptionModel.EndTime = model.EndTime;
+                subscriptionModel.Active = model.Active;
+            }
+            var result = await _db.Update(subscriptionModel);          
 
             return Ok(result);
         }
