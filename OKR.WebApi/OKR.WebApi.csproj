@@ -13,9 +13,4 @@
     <ProjectReference Include="..\OKR\StorageCore.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Abstraction\" />
-    <Folder Include="Services\Implementation\" />
-  </ItemGroup>
-
 </Project>

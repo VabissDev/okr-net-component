@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using OKR.Common.Extensions;
+using OKR.WebApi.Services.Abstraction;
+using OKR.WebApi.Services.Implementation;
 using StorageCore.DataAccess;
 using StorageCore.Domain.Abstraction;
 using System;
@@ -33,6 +35,7 @@ namespace OKR.WebApi
             DefaultTypeMap.MatchNamesWithUnderscores = true;
             services.AddScoped<IDbService, DbService>();
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+            services.AddScoped<ISubscriptionService, SubscriptionService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

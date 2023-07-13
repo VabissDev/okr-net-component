@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OKR.WebApi.Models;
+using OKR.WebApi.Services.Abstraction;
 using StorageCore.Domain.Abstraction;
 using StorageCore.Domain.Entities;
 using System;
@@ -13,17 +14,17 @@ namespace OKR.WebApi.Controllers
     [ApiController]
     public class SubscriptionController : ControllerBase
     {
-        private readonly ISubscriptionRepository _db;
+        private readonly ISubscriptionService _service;
 
-        public SubscriptionController(ISubscriptionRepository db)
+        public SubscriptionController(ISubscriptionService service)
         {
-            _db = db;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var result = await _db.GetAll();
+            var result = await _service.Get();
 
             return Ok(result);
         }
@@ -31,7 +32,7 @@ namespace OKR.WebApi.Controllers
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetSubscription(int id)
         {
-            var result = await _db.GetById(id);
+            var result = await _service.GetById(id);
 
             return Ok(result);
         }
@@ -39,14 +40,8 @@ namespace OKR.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> AddSubscription([FromBody] SubscriptionModel model)
         {
-            var subscription = new Subscription
-            {
-                Id = model.Id,
-                StartTime = model.StartTime,
-                EndTime = model.EndTime,
-                Active = model.Active
-            };
-            var result = await _db.Create(subscription);
+
+            var result = await _service.Add(model);
 
             return Ok(result);
         }
@@ -54,14 +49,7 @@ namespace OKR.WebApi.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateEmployee(int id, [FromBody] UpdateSubscriptionModel model)
         {
-            var subscriptionModel = await _db.GetById(id);
-            if (subscriptionModel != null)
-            {
-                subscriptionModel.StartTime = model.StartTime;
-                subscriptionModel.EndTime = model.EndTime;
-                subscriptionModel.Active = model.Active;
-            }
-            var result = await _db.Update(subscriptionModel);          
+            var result = await _service.Update(id,model);
 
             return Ok(result);
         }
@@ -69,7 +57,7 @@ namespace OKR.WebApi.Controllers
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var result = await _db.Delete(id);
+            var result = await _service.Delete(id);
 
             return Ok(result);
         }
