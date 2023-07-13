@@ -40,6 +40,8 @@ namespace OKR.WebApi
             services.AddScoped<ISubscriptionService, SubscriptionService>();
             services.AddScoped<ISubscriptionPlanRepository, SubscriptionPlanRepository>();
             services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
+            services.AddScoped<IBillingRepository, BillingRepository>();
+            services.AddScoped<IBillingService, BillingService>();
 
             services.AddScoped<IDbConnection>(provider => new NpgsqlConnection(Configuration.GetConnectionString("DefaultConnection")));
 
