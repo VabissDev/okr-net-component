@@ -9,6 +9,6 @@ namespace StorageCore.Domain.Abstraction
 {
     public interface ISubscriptionRepository : IRepository<Subscription>
     {
-       
+
     }
 }

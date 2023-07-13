@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Npgsql;
 using OKR.Common.Extensions;
 using OKR.WebApi.Services.Abstraction;
 using OKR.WebApi.Services.Implementation;
@@ -15,6 +16,7 @@ using StorageCore.DataAccess;
 using StorageCore.Domain.Abstraction;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -36,6 +38,11 @@ namespace OKR.WebApi
             services.AddScoped<IDbService, DbService>();
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
             services.AddScoped<ISubscriptionService, SubscriptionService>();
+            services.AddScoped<ISubscriptionPlanRepository, SubscriptionPlanRepository>();
+            services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
+
+            services.AddScoped<IDbConnection>(provider => new NpgsqlConnection(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

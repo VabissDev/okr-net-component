@@ -9,6 +9,6 @@ namespace StorageCore.Domain.Abstraction
 {
     public interface ISubscriptionPlanRepository : IRepository<SubscriptionPlan>
     {
-       
+        Task<bool> Update(SubscriptionPlan obj);
     }
 }
