@@ -8,8 +8,7 @@ namespace OKR.WebApi.Models
 {
     public class UpdateSubscriptionModel
     {
-        [Required]
-        public int Id { get; set; }
+       
         [Required]
         public DateTime StartTime { get; set; }
         [Required]
