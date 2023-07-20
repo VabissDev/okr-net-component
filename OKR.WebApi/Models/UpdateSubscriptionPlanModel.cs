@@ -10,16 +10,14 @@ namespace OKR.WebApi.Models
 {
     public class UpdateSubscriptionPlanModel
     {
-        [Required]
-        public int Id { get; set; }
+        
         [Required]
         public decimal Amount { get; set; }
         [Required]
         public PlanType Type { get; set; }
-        [Required]
-        public int SubscriptionId { get; set; }
-        [Required]
-        public Subscription Subscription { get; set; }
+
+        [Required] public int SubscriptionId { get; set; }
+
         [Required]
         public int UserCount { get; set; }
         [Required]
